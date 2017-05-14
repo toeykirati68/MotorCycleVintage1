@@ -6,13 +6,69 @@
     android:layout_height="match_parent"
     tools:context="com.example.toey_kirati.motorcyclevintage.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <Button
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Login"
+        android:onClick="clickLogin"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteY="434dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/myLinear"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/a2"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="301dp"
+        android:layout_height="57dp"
+        android:hint="Password :"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteY="357dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/myLinear"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#82ffffff"
+        android:orientation="vertical"
+        android:padding="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="171dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Motorcycle"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User :"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
+
+
+
